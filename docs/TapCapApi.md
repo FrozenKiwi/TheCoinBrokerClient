@@ -1,6 +1,6 @@
 # TheCoinBroker.TapCapApi
 
-All URIs are relative to *http://192.222.141.84:3196*
+All URIs are relative to *http://192.222.141.84:29554*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
