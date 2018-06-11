@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="tapCapHistory"></a>
 # **tapCapHistory**
-> TapCapHistoryResponse tapCapHistory(request)
+> TapCapHistoryResponseSigned tapCapHistory(request)
 
 TapCap current status
 
@@ -22,7 +22,7 @@ import TheCoinBroker from 'the_coin_broker';
 
 let apiInstance = new TheCoinBroker.TapCapApi();
 
-let request = new TheCoinBroker.TapCapHistoryRequest(); // TapCapHistoryRequest | Purchase Request info
+let request = new TheCoinBroker.TapCapHistoryRequestSigned(); // TapCapHistoryRequestSigned | Purchase Request info
 
 apiInstance.tapCapHistory(request).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -36,11 +36,11 @@ apiInstance.tapCapHistory(request).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TapCapHistoryRequest**](TapCapHistoryRequest.md)| Purchase Request info | 
+ **request** | [**TapCapHistoryRequestSigned**](TapCapHistoryRequestSigned.md)| Purchase Request info | 
 
 ### Return type
 
-[**TapCapHistoryResponse**](TapCapHistoryResponse.md)
+[**TapCapHistoryResponseSigned**](TapCapHistoryResponseSigned.md)
 
 ### Authorization
 
@@ -53,7 +53,7 @@ No authorization required
 
 <a name="tapCapStatus"></a>
 # **tapCapStatus**
-> TapCapQueryResponse tapCapStatus(request)
+> TapCapQueryResponseSigned tapCapStatus(request)
 
 TapCap current status
 
@@ -65,7 +65,7 @@ import TheCoinBroker from 'the_coin_broker';
 
 let apiInstance = new TheCoinBroker.TapCapApi();
 
-let request = new TheCoinBroker.TapCapQueryRequest(); // TapCapQueryRequest | TapCap status request
+let request = new TheCoinBroker.TapCapQueryRequestSigned(); // TapCapQueryRequestSigned | TapCap status request
 
 apiInstance.tapCapStatus(request).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -79,11 +79,11 @@ apiInstance.tapCapStatus(request).then((data) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**TapCapQueryRequest**](TapCapQueryRequest.md)| TapCap status request | 
+ **request** | [**TapCapQueryRequestSigned**](TapCapQueryRequestSigned.md)| TapCap status request | 
 
 ### Return type
 
-[**TapCapQueryResponse**](TapCapQueryResponse.md)
+[**TapCapQueryResponseSigned**](TapCapQueryResponseSigned.md)
 
 ### Authorization
 

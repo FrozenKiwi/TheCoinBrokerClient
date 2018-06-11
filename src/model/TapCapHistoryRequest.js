@@ -32,16 +32,15 @@ export default class TapCapHistoryRequest {
     * @param untilTimestamp {Number} 
     * @param userAccount {String} 
     * @param random {String} 
-    * @param signature {String} 
     */
 
-    constructor(fromTimestamp, untilTimestamp, userAccount, random, signature) {
+    constructor(fromTimestamp, untilTimestamp, userAccount, random) {
         
 
         
         
 
-        this['fromTimestamp'] = fromTimestamp;this['untilTimestamp'] = untilTimestamp;this['userAccount'] = userAccount;this['random'] = random;this['signature'] = signature;
+        this['fromTimestamp'] = fromTimestamp;this['untilTimestamp'] = untilTimestamp;this['userAccount'] = userAccount;this['random'] = random;
 
         
     }
@@ -73,9 +72,6 @@ export default class TapCapHistoryRequest {
             if (data.hasOwnProperty('random')) {
                 obj['random'] = ApiClient.convertToType(data['random'], 'String');
             }
-            if (data.hasOwnProperty('signature')) {
-                obj['signature'] = ApiClient.convertToType(data['signature'], 'String');
-            }
         }
         return obj;
     }
@@ -96,10 +92,6 @@ export default class TapCapHistoryRequest {
     * @member {String} random
     */
     random = undefined;
-    /**
-    * @member {String} signature
-    */
-    signature = undefined;
 
 
 

@@ -31,16 +31,15 @@ export default class TapCapQueryRequest {
     * @param timestamp {Number} 
     * @param random {String} 
     * @param userAccount {String} 
-    * @param signature {String} 
     */
 
-    constructor(timestamp, random, userAccount, signature) {
+    constructor(timestamp, random, userAccount) {
         
 
         
         
 
-        this['timestamp'] = timestamp;this['random'] = random;this['userAccount'] = userAccount;this['signature'] = signature;
+        this['timestamp'] = timestamp;this['random'] = random;this['userAccount'] = userAccount;
 
         
     }
@@ -69,9 +68,6 @@ export default class TapCapQueryRequest {
             if (data.hasOwnProperty('userAccount')) {
                 obj['userAccount'] = ApiClient.convertToType(data['userAccount'], 'String');
             }
-            if (data.hasOwnProperty('signature')) {
-                obj['signature'] = ApiClient.convertToType(data['signature'], 'String');
-            }
         }
         return obj;
     }
@@ -88,10 +84,6 @@ export default class TapCapQueryRequest {
     * @member {String} userAccount
     */
     userAccount = undefined;
-    /**
-    * @member {String} signature
-    */
-    signature = undefined;
 
 
 

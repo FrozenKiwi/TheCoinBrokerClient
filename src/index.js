@@ -22,9 +22,13 @@ import SellRequestSigned from './model/SellRequestSigned';
 import SellResponse from './model/SellResponse';
 import SellResponseSigned from './model/SellResponseSigned';
 import TapCapHistoryRequest from './model/TapCapHistoryRequest';
+import TapCapHistoryRequestSigned from './model/TapCapHistoryRequestSigned';
 import TapCapHistoryResponse from './model/TapCapHistoryResponse';
+import TapCapHistoryResponseSigned from './model/TapCapHistoryResponseSigned';
 import TapCapQueryRequest from './model/TapCapQueryRequest';
+import TapCapQueryRequestSigned from './model/TapCapQueryRequestSigned';
 import TapCapQueryResponse from './model/TapCapQueryResponse';
+import TapCapQueryResponseSigned from './model/TapCapQueryResponseSigned';
 import TapCapTransaction from './model/TapCapTransaction';
 import ExchangeApi from './api/ExchangeApi';
 import TapCapApi from './api/TapCapApi';
@@ -123,10 +127,22 @@ export {
     TapCapHistoryRequest,
 
     /**
+     * The TapCapHistoryRequestSigned model constructor.
+     * @property {module:model/TapCapHistoryRequestSigned}
+     */
+    TapCapHistoryRequestSigned,
+
+    /**
      * The TapCapHistoryResponse model constructor.
      * @property {module:model/TapCapHistoryResponse}
      */
     TapCapHistoryResponse,
+
+    /**
+     * The TapCapHistoryResponseSigned model constructor.
+     * @property {module:model/TapCapHistoryResponseSigned}
+     */
+    TapCapHistoryResponseSigned,
 
     /**
      * The TapCapQueryRequest model constructor.
@@ -135,10 +151,22 @@ export {
     TapCapQueryRequest,
 
     /**
+     * The TapCapQueryRequestSigned model constructor.
+     * @property {module:model/TapCapQueryRequestSigned}
+     */
+    TapCapQueryRequestSigned,
+
+    /**
      * The TapCapQueryResponse model constructor.
      * @property {module:model/TapCapQueryResponse}
      */
     TapCapQueryResponse,
+
+    /**
+     * The TapCapQueryResponseSigned model constructor.
+     * @property {module:model/TapCapQueryResponseSigned}
+     */
+    TapCapQueryResponseSigned,
 
     /**
      * The TapCapTransaction model constructor.

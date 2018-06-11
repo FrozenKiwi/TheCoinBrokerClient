@@ -13,10 +13,10 @@
 
 
 import ApiClient from "../ApiClient";
-import TapCapHistoryRequest from '../model/TapCapHistoryRequest';
-import TapCapHistoryResponse from '../model/TapCapHistoryResponse';
-import TapCapQueryRequest from '../model/TapCapQueryRequest';
-import TapCapQueryResponse from '../model/TapCapQueryResponse';
+import TapCapHistoryRequestSigned from '../model/TapCapHistoryRequestSigned';
+import TapCapHistoryResponseSigned from '../model/TapCapHistoryResponseSigned';
+import TapCapQueryRequestSigned from '../model/TapCapQueryRequestSigned';
+import TapCapQueryResponseSigned from '../model/TapCapQueryResponseSigned';
 
 /**
 * TapCap service.
@@ -41,8 +41,8 @@ export default class TapCapApi {
     /**
      * TapCap current status
      * User TapCap status
-     * @param {module:model/TapCapHistoryRequest} request Purchase Request info
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TapCapHistoryResponse} and HTTP response
+     * @param {module:model/TapCapHistoryRequestSigned} request Purchase Request info
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TapCapHistoryResponseSigned} and HTTP response
      */
     tapCapHistoryWithHttpInfo(request) {
       let postBody = request;
@@ -65,7 +65,7 @@ export default class TapCapApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = TapCapHistoryResponse;
+      let returnType = TapCapHistoryResponseSigned;
 
       return this.apiClient.callApi(
         '/tap/history', 'POST',
@@ -77,8 +77,8 @@ export default class TapCapApi {
     /**
      * TapCap current status
      * User TapCap status
-     * @param {module:model/TapCapHistoryRequest} request Purchase Request info
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TapCapHistoryResponse}
+     * @param {module:model/TapCapHistoryRequestSigned} request Purchase Request info
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TapCapHistoryResponseSigned}
      */
     tapCapHistory(request) {
       return this.tapCapHistoryWithHttpInfo(request)
@@ -91,8 +91,8 @@ export default class TapCapApi {
     /**
      * TapCap current status
      * User TapCap status
-     * @param {module:model/TapCapQueryRequest} request TapCap status request
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TapCapQueryResponse} and HTTP response
+     * @param {module:model/TapCapQueryRequestSigned} request TapCap status request
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/TapCapQueryResponseSigned} and HTTP response
      */
     tapCapStatusWithHttpInfo(request) {
       let postBody = request;
@@ -115,7 +115,7 @@ export default class TapCapApi {
       let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = TapCapQueryResponse;
+      let returnType = TapCapQueryResponseSigned;
 
       return this.apiClient.callApi(
         '/tap/state', 'POST',
@@ -127,8 +127,8 @@ export default class TapCapApi {
     /**
      * TapCap current status
      * User TapCap status
-     * @param {module:model/TapCapQueryRequest} request TapCap status request
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TapCapQueryResponse}
+     * @param {module:model/TapCapQueryRequestSigned} request TapCap status request
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/TapCapQueryResponseSigned}
      */
     tapCapStatus(request) {
       return this.tapCapStatusWithHttpInfo(request)

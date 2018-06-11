@@ -7,6 +7,5 @@ Name | Type | Description | Notes
 **untilTimestamp** | **Number** |  | 
 **userAccount** | **String** |  | 
 **random** | **String** |  | 
-**signature** | **String** |  | 
 
 

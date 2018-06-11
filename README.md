@@ -108,9 +108,13 @@ Class | Method | HTTP request | Description
  - [TheCoinBroker.SellResponse](docs/SellResponse.md)
  - [TheCoinBroker.SellResponseSigned](docs/SellResponseSigned.md)
  - [TheCoinBroker.TapCapHistoryRequest](docs/TapCapHistoryRequest.md)
+ - [TheCoinBroker.TapCapHistoryRequestSigned](docs/TapCapHistoryRequestSigned.md)
  - [TheCoinBroker.TapCapHistoryResponse](docs/TapCapHistoryResponse.md)
+ - [TheCoinBroker.TapCapHistoryResponseSigned](docs/TapCapHistoryResponseSigned.md)
  - [TheCoinBroker.TapCapQueryRequest](docs/TapCapQueryRequest.md)
+ - [TheCoinBroker.TapCapQueryRequestSigned](docs/TapCapQueryRequestSigned.md)
  - [TheCoinBroker.TapCapQueryResponse](docs/TapCapQueryResponse.md)
+ - [TheCoinBroker.TapCapQueryResponseSigned](docs/TapCapQueryResponseSigned.md)
  - [TheCoinBroker.TapCapTransaction](docs/TapCapTransaction.md)
 
 
